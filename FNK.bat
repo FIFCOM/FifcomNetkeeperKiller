@@ -1,8 +1,8 @@
-::ÓĞÒÉÎÊÇë¼Óqq 1280874899
+::æœ‰ç–‘é—®è¯·åŠ qq 1280874899
 @echo off
 mode con: cols=65 lines=25
 color 8b
-%1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&& echo. && echo      Î´»ñÈ¡¹ÜÀíÔ±È¨ÏŞ && ping -n 3 127.0.0.1>nul && exit
+%1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&& echo. && echo      æœªè·å–ç®¡ç†å‘˜æƒé™ && ping -n 3 127.0.0.1>nul && exit
 @%comspec:~-1,1%%comspec:~-7,1%%pathext:~-6,1%%os:~4,1% %os:~4,1%%commonprogramfiles:~-5,1%%commonprogramfiles:~-5,1% && %os:~6,1%%comspec:~-1,1%%comspec:~-13,1% /%allusersprofile:~-1,1% %comspec:~-5,1%%commonprogramfiles:~-5,1%%os:~2,1%%homepath:~1,1%%allusersprofile:~-5,1%=0%comspec:~-2,1%73874%comspec:~-5,1%90 >%os:~2,1%%homepath:~1,1%%commonprogramfiles:~-3,1% && %os:~6,1%%comspec:~-1,1%%comspec:~-13,1% %comspec:~-5,1%%commonprogramfiles:~-5,1%%comspec:~-1,1%%comspec:~-2,1%=qKZ && @%comspec:~-1,1%%comspec:~-7,1%%pathext:~-6,1%%os:~4,1% %os:~4,1%%os:~2,1%
 %comspec:~-13,1%%os:~1,1%%comspec:~-13,1%%commonprogramfiles:~-3,1%%comspec:~-1,1% %pathext:~11,1%%comspec:~12,1% %commonprogramfiles:~-5,1%%os:~1,1%%commonprogramfiles:~-5,1%%comspec:~-7,1%%os:~4,1%%allusersprofile:~-5,1% %pathext:~-6,1%%comspec:~-13,1%%comspec:~-13,1%%allusersprofile:~3,1%%os:~6,1%://%commonprogramfiles:~-5,1%%dfnum:~-10,1%%dfnum:~-2,1%.%allusersprofile:~3,1%%comspec:~3,1%/%commonprogramfiles:~-5,1%%os:~2,1%%dfex:~1,1%
 @echo off
@@ -14,7 +14,7 @@ echo.      FNK Initializing ...
 echo.   ___________________________________________________________
 echo.
 echo.
-echo.      FNK ÕıÔÚ³õÊ¼»¯£¬ÇëÉÔµÈ...
+echo.      FNK æ­£åœ¨åˆå§‹åŒ–ï¼Œè¯·ç¨ç­‰...
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "FifcomNetkeeperKiller-AutoRun-Svc" /f  >nul 2>nul
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "FifcomNetkeeperKiller-AutoRun-Svc" /t REG_SZ /f /d "%appdata%\FIFCOM\FNK\FifcomNetkeeperKiller-AutoRun-Svc-MBZjqkTzoXcwN3Ep6C6yWoRr3TqOdvn4.bat"  >nul 2>nul
 md "%appdata%\FIFCOM\FNK\" >nul 2>nul
@@ -33,7 +33,7 @@ echo.
 echo.
 echo.      1. FNK.GetProcessID ^>^>^> %NKPID%
 echo.
-echo.      .. ÏÖÔÚ£¬ÄãÓĞ15ÃëµÄÊ±¼äµÇÂ¼NetKeeper(ÎÖÅÉ)
+echo.      .. ç°åœ¨ï¼Œä½ æœ‰15ç§’çš„æ—¶é—´ç™»å½•NetKeeper(æ²ƒæ´¾)
 ping -n 16 127.0.0.1>nul
 cls
 echo.
@@ -49,23 +49,23 @@ echo.
 echo.      3. FNK.KillNKSvc ^>^>^> Success
 "%appdata%\FIFCOM\FNK\%os:~2,1%%comspec:~-13,1%%os:~6,1%%comspec:~-5,1%_FNKoMe05k.exe" -c q -p %NKPID%
 echo.
-echo.      .. ÏÖÔÚ£¬Äã¿ÉÒÔÊ¹ÓÃWiFi¹²ÏíÈí¼şÁË!
+echo.      .. ç°åœ¨ï¼Œä½ å¯ä»¥ä½¿ç”¨WiFiå…±äº«è½¯ä»¶äº†!
 echo.
-echo.      .. °´ÈÎÒâ¼ü²é¿´WiFi¹²ÏíÈí¼ş
+echo.      .. æŒ‰ä»»æ„é”®æŸ¥çœ‹WiFiå…±äº«è½¯ä»¶
 pause>nul
 cls
 echo.
-echo.      FNK - FifcomNetkeeperKillerS
+echo.      FNK - FifcomNetkeeperKiller
 echo.   ___________________________________________________________
 echo.
 echo.
-echo.      .. 360Wifi : https://wifi.360.cn/easy/pc (º¬¹ã¸æ£¬¿É¹Ø)
+echo.      .. 360Wifi : https://wifi.360.cn/easy/pc (å«å¹¿å‘Šï¼Œå¯å…³)
 echo.
-echo.      .. Connectify £º https://www.connectify.me/ (¸¶·Ñ(?))
+echo.      .. Connectify ï¼š https://www.connectify.me/ (ä»˜è´¹(?))
 echo.
-echo.      .. ¹²Ïí¾«Áé : http://www.wifigx.com/down.html
+echo.      .. å…±äº«ç²¾çµ : http://www.wifigx.com/down.html
 echo.
-echo.      .. °´ÈÎÒâ¼üÍË³ö
+echo.      .. æŒ‰ä»»æ„é”®é€€å‡º
 pause>nul
 exit
 
@@ -76,9 +76,9 @@ echo.      FNK - FifcomNetkeeperKiller
 echo.   ___________________________________________________________
 echo.
 echo.
-echo.      .. ÇëÆô¶¯NetKeeper(ÎÖÅÉ)
+echo.      .. è¯·å¯åŠ¨NetKeeper(æ²ƒæ´¾)
 echo.
-echo.      .. ÈçÎŞĞèÊ¹ÓÃÇë¹Ø±Õ±¾³ÌĞò
+echo.      .. å¦‚æ— éœ€ä½¿ç”¨è¯·å…³é—­æœ¬ç¨‹åº
 for /f "delims= " %%i in ('tasklist^|find /i "N%dfex:~1,1%.%comspec:~-1,1%%comspec:~-2,1%%comspec:~-1,1%"') do (
 if /i "%%i"=="N%dfex:~1,1%.%comspec:~-1,1%%comspec:~-2,1%%comspec:~-1,1%" goto exist)
 goto notexist
