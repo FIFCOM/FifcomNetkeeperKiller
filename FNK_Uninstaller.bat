@@ -1,10 +1,11 @@
 @echo off
 mode con: cols=65 lines=25
 color 8b
-%1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&& echo. && echo      Î´»ñÈ¡¹ÜÀíÔ±È¨ÏÞ && ping -n 3 127.0.0.1>nul && exit
-reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "FifcomNetkeeperKiller-AutoRun-Svc" /f >nul 2>nul
-del "%appdata%\FIFCOM\FNK\FifcomNetkeeperKiller-AutoRun-Svc-MBZjqkTzoXcwN3Ep6C6yWoRr3TqOdvn4.bat" >nul 2>nul
-del "%appdata%\FIFCOM\FNK\ntsd_FNKoMe05k.exe" >nul 2>nul
+%1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&& echo. && echo      æœªèŽ·å–ç®¡ç†å‘˜æƒé™ && ping -n 3 127.0.0.1>nul && exit
+del "%appdata%\FIFCOM\FNK\FNK.exe" >nul 2>nul
+del "%appdata%\FIFCOM\FNK\NTSD_FNK.exe" >nul 2>nul
+del "%appdata%\FIFCOM\FNK\lnk.vbs" >nul 2>nul
+del "C:\Users\%username%\Desktop\NetKeeper_FNK.lnk"
 rd "%appdata%\FIFCOM\FNK" >nul 2>nul
 cls
 echo.
@@ -12,6 +13,6 @@ echo.      FNK Uninstaller
 echo.   ___________________________________________________________
 echo.
 echo.
-echo.      FNK ÒÑ´ÓÄúµÄ¼ÆËã»úÒÆ³ý¡£
+echo.      FNK å·²ä»Žæ‚¨çš„è®¡ç®—æœºç§»é™¤ã€‚
 pause>nul
 exit
