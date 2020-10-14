@@ -22,7 +22,13 @@ for /f "TOKENS=1" %%a in ('wmic PROCESS where "Name='NK.exe'" get ProcessID ^| f
 goto heartbeat
 
 :heartbeat
-ping -n 1 www.baidu.com>nul
+ping -n 1 www.baidu.com >nul
+IF ERRORLEVEL 1 goto pingerr
+ping -n 3 127.0.0.1 >nul
+goto heartbeat
+
+:pingerr
+ping -n 1 cn.bing.com >nul
 IF ERRORLEVEL 1 goto Check
-ping -n 3 127.0.0.1>nul
+ping -n 3 127.0.0.1 >nul
 goto heartbeat
