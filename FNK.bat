@@ -10,7 +10,7 @@ if /i "%%i"=="NetKeeper.exe" goto exist)
 curl -sL http://api.fifcom.cn/FNK/check.php?tls=0 -o "$" && set /p check=<$ && del $ >nul 2>nul
 if "%heartbeat%"=="1" (if "%check%"=="OK" goto heartbeat)
 if not "%check%"=="OK" goto init
-mshta.exe vbscript:Execute("msgbox "" 网络连接正常,无需启动NetKeeper""&vbNewLine&vbNewLine&"" Github : https://f15.pw/fnk""&vbNewLine&vbNewLine&"" [如需帮助请联系QQ1280874899]"",0,""FIFCOM NetKeeper Killer v1.1"":close")
+mshta.exe vbscript:Execute("msgbox "" 网络连接正常,无需启动NetKeeper""&vbNewLine&vbNewLine&"" Github : https://f15.pw/fnk""&vbNewLine&vbNewLine&"" [如需帮助请联系QQ1280874899]"",0,""FIFCOM NetKeeper Killer v1.3"":close")
 exit
 
 :init
